@@ -26,7 +26,7 @@ class penjualanDetail extends Model
  
     public function penjualan()
     {
-        return $this->hasMany(Penjualan::class, 'penjualan_id', 'penjualan_id');
+        return $this->belongsTo(Penjualan::class, 'penjualan_id', 'penjualan_id');
     }
  
     public function getTotalAttribute(): int
