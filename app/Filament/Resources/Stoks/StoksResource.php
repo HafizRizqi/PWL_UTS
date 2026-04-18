@@ -23,6 +23,9 @@ class StoksResource extends Resource
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedArchiveBox;
 
     protected static ?string $recordTitleAttribute = 'name';
+    protected static ?string $navigationLabel = 'Stok';
+    protected static ?string $pluralModelLabel = 'Stok';
+    protected static ?string $modelLabel = 'Stok';
 
     public static function form(Schema $schema): Schema
     {

@@ -21,6 +21,9 @@ class PenjualanResource extends Resource
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedShoppingCart;
 
     protected static ?string $recordTitleAttribute = 'name';
+    protected static ?string $navigationLabel = 'Penjualan';
+    protected static ?string $pluralModelLabel = 'Penjualan';
+    protected static ?string $modelLabel = 'Penjualan';
 
     public static function form(Schema $schema): Schema
     {
