@@ -24,5 +24,6 @@ class SupplierForm
                     ->label('Alamat Supplier')
                     ->maxLength(255),
             ]);
+
     }
 }

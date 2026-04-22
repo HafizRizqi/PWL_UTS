@@ -14,9 +14,9 @@ class PenjualanDetailsTable
     {
         return $table
             ->columns([
-                TextColumn::make('penjualan.penjualan_id')
+                TextColumn::make('penjualan.penjualan_kode')
                     ->searchable(),
-                TextColumn::make('barang.barang_id')
+                TextColumn::make('barang.barang_nama')
                     ->searchable(),
                 TextColumn::make('harga')
                     ->numeric()

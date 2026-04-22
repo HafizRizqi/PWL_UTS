@@ -14,15 +14,15 @@ class PenjualanDetailForm
     {
         return $schema
             ->components([
-                Select::make('penjualan_id')
-                    ->relationship('penjualan', 'penjualan_id')
+                Select::make('Kode Penjualan')
+                    ->relationship('penjualan', 'penjualan_kode')
                     ->required(),
-                Select::make('barang_id')
-                    ->relationship('barang', 'barang_id')
+                Select::make('Nama Barang')
+                    ->relationship('barang', 'barang_nama')
                     ->required(),
-                TextInput::make('harga')
+                Select::make('harga')
                     ->required()
-                    ->numeric(),
+                    ->relationship('barang', 'harga_jual'),
                 TextInput::make('jumlah')
                     ->required()
                     ->numeric(),
